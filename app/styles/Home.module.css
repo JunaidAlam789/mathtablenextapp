@@ -1,0 +1,17 @@
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0 auto;
+    justify-content: space-around;
+    background: #fff;
+  }
+  
+  .article {
+    width: calc(33.33% - 8px);
+    margin: 4px;
+    background: #a2e;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+  }
