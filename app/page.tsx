@@ -7,6 +7,8 @@ import Stag from './components/StagAnimate'
 import Slider from './components/Slider'
 //import { TableForm } from './components/TableForm'
 import { TableForm2 } from './components/TableForm2'
+import AosAnimate from './components/AosAnimate'
+import StagAnimateAos from './components/StagAnimateAos'
 
 //const inter = Inter({ subsets: ['latin'] })
 
@@ -20,11 +22,14 @@ export default function Home() {
     <button className="border-2 m-2 p-2 rounded-lg bg-blue-500 hover:bg-blue-800 text-white"><a href="/7">Table7</a></button>
     <button className="border-2 m-2 p-2 rounded-lg bg-blue-500 hover:bg-blue-800 text-white"><a href="/8">Table8</a></button>
     </div>
+    <TableForm2/>
     <Table/>
     <CustomTable/>
-    <TableForm2/>
-    <Stag/>
-    <Slider/>
+   
+    
+   {/*  <Slider/>
+    <StagAnimateAos/> */}
+   {/*  <AosAnimate/> */}
     
      </>
   )

@@ -89,42 +89,39 @@ const useState= React.useState
             
         }
         
-                
+       // bg-gradient-to-r from-cyan-500 to-blue-500'    
         return (<>
 
-            <div className=' pl-96 bg-blue-400'>
+            <div className=' pl-96 bg-gradient-to-r from-cyan-500 to-blue-500 p-20' >
         <form key="1234" onSubmit={formEventHandler1}>
             <fieldset>
                 <legend> Table </legend>
             <input className="bg-blue-100 border-blue-800 border-2" onChange={e =>{ formEventHandler1(e);setNumber(e.target.value)}} placeholder="Number for Table" ></input>
-            <button className="bg-blue-800 text-white border-2 rounded-lg p-2   ">Submit</button>
+            <button className="bg-blue-800 text-white border-2 rounded-lg mx-10 p-2   ">Submit</button>
             </fieldset>
         </form>
-         <h1>Multiplication Table of {number}</h1>
+         <h1 className="m-10 text-lg font-bold">Multiplication Table of {number}</h1>
           
    
      
         <form key="1236" onSubmit={formEventHandler3} >
         <fieldset className="grid grid-cols-[10%,20%,5%] text-center ">
-        <h3  key="1">{number} x {1} = </h3> <input value={ans1}  className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,1)} key="11"   placeholder="Ans"></input><h3> {result1=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3  key="2">{number} x {2} = </h3><input value={ans2} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,2)} key="12"   placeholder="Ans"></input><h3> {result2=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3 key="3">{number} x {3} = </h3><input value={ans3} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,3)} key="13"   placeholder="Ans"></input><h3> {result3=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3 key="4">{number} x {4} = </h3><input value={ans4} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,4)} key="14"   placeholder="Ans"></input><h3> {result4=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3 key="5">{number} x {5} = </h3><input value={ans5} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,5)} key="15"   placeholder="Ans"></input><h3> {result5=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3 key="6">{number} x {6} = </h3><input value={ans6} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,6)} key="16"   placeholder="Ans"></input><h3> {result6=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3 key="7">{number} x {7} = </h3><input value={ans7} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,7)} key="17"   placeholder="Ans"></input><h3> {result7=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3 key="8">{number} x {8} = </h3><input value={ans8} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,8)} key="18"   placeholder="Ans"></input><h3> {result8=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3 key="9">{number} x {9} = </h3><input value={ans9} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,9)} key="19"   placeholder="Ans"></input><h3> {result9=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <h3 key="10">{number} x {10} =</h3><input value={ans10} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,10)} key="20"   placeholder="Ans"></input><h3> {result10=="correct"? <i className="fa fa-check text-green-600"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
-        <button className="bg-blue-800 text-white rounded-lg border-2 p-2">Submit</button>
+        <h3  key="1">{number} x {1} = </h3> <input value={ans1}  className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,1)} key="11"   placeholder="Ans"></input><h3> {result1=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3  key="2">{number} x {2} = </h3><input value={ans2} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,2)} key="12"   placeholder="Ans"></input><h3> {result2=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3 key="3">{number} x {3} = </h3><input value={ans3} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,3)} key="13"   placeholder="Ans"></input><h3> {result3=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3 key="4">{number} x {4} = </h3><input value={ans4} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,4)} key="14"   placeholder="Ans"></input><h3> {result4=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3 key="5">{number} x {5} = </h3><input value={ans5} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,5)} key="15"   placeholder="Ans"></input><h3> {result5=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3 key="6">{number} x {6} = </h3><input value={ans6} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,6)} key="16"   placeholder="Ans"></input><h3> {result6=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3 key="7">{number} x {7} = </h3><input value={ans7} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,7)} key="17"   placeholder="Ans"></input><h3> {result7=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3 key="8">{number} x {8} = </h3><input value={ans8} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,8)} key="18"   placeholder="Ans"></input><h3> {result8=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3 key="9">{number} x {9} = </h3><input value={ans9} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,9)} key="19"   placeholder="Ans"></input><h3> {result9=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <h3 key="10">{number} x {10} =</h3><input value={ans10} className="bg-blue-100 border-blue-800 border-2" onChange={(e)=>onChangeInput1(e,10)} key="20"   placeholder="Ans"></input><h3> {result10=="correct"? <i className="fa fa-check text-green-300"></i>:<i className="fa fa-times text-red-600"></i>} </h3> 
+        <button className=" bg-blue-800 text-white rounded-lg border-2 ml-20 my-10 mr-auto p-2">Submit</button>
         </fieldset>
         </form>
        
         </div>
-        <h3>Powered by KvobjeSoft  <i className="fa fa-envelope"></i>
-        <i className="fa fa-check text-green-600"></i>
-        <i className="fa fa-times  text-red-600"></i>
-        </h3>
+        
        
         </>);
    
