@@ -97,7 +97,7 @@ const useState= React.useState
             <fieldset>
                 <legend> Table </legend>
             <input className="bg-blue-100 border-blue-800 border-2" onChange={e =>{ formEventHandler1(e);setNumber(e.target.value)}} placeholder="Number for Table" ></input>
-            <button className="bg-blue-800 text-white border-2 rounded-lg mx-10 p-2   ">Submit</button>
+            <button className="bg-blue-800 text-white border-2 rounded-lg ml-10 mr-auto p-2   ">Submit</button>
             </fieldset>
         </form>
          <h1 className="m-10 text-lg font-bold">Multiplication Table of {number}</h1>
