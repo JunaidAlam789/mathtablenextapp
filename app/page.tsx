@@ -27,6 +27,7 @@ export default function Home() {
     <CustomTable/>
    
     
+    <CustomTable/> 
    {/*  <Slider/>
     <StagAnimateAos/> */}
    {/*  <AosAnimate/> */}
